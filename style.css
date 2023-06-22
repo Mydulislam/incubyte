@@ -1,0 +1,476 @@
+/*=================================== Common CSS Start ==================================*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.sub-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nomrgin {
+    margin-right: 0px !important;
+}
+
+/*================================== Header Styling Start ================================*/
+.header {
+    padding: 1rem 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header .logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #2849B9;
+    font-weight: bolder;
+}
+
+.header .logo i {
+    color: #0eb582;
+}
+
+.header .navbar {
+    position: relative;
+}
+
+.header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #444;
+    display: none;
+}
+
+.header .navbar #close-navbar:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.header .navbar a {
+    margin-right: 2rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #6980CE;
+}
+
+.header .navbar a:hover {
+    color: #0eb582;
+}
+
+.header .icons div {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #444;
+    margin-left: 1.5rem;
+}
+
+.header .icons div:hover {
+    color: #0eb582;
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+/*================================== Banner Styling Part ================================*/
+.banner-area {
+    position: relative;
+    background-color: #A2D8F2;
+}
+
+.banner-area .banner-content {}
+
+.banner-area .banner-content .bannter-text {
+    display: grid;
+    place-items: center;
+    padding: 4rem 0;
+}
+
+.banner-area .banner-content .bannter-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.banner-area .banner-content .bannter-text h1 span {
+    color: #4066C4
+}
+
+.banner-area .banner-content .bannter-text p {
+    color: #000;
+}
+
+.banner-area .banner-content .bannter-text img {}
+
+.banner-area .banner-content .top-image img {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 15%;
+    left: 17%;
+}
+
+.banner-area .banner-content .left-image img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10%;
+    height: 75%;
+}
+
+.banner-area .banner-content .right-image img {
+    width: 13%;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+/*================================== About Us Styling Part ================================*/
+.about-area {
+    background-color: #3457BF;
+    padding: 4rem;
+}
+
+.about-area .about-content {
+    padding: 2rem;
+}
+
+.about-area .about-content h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.about-area .about-content p {
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+/*================================== Expertise Styling Part ================================*/
+.expertise-area {
+    background-color: #EAEFFF;
+}
+
+.expertise-area .expertise-content {
+    padding: 2rem;
+}
+
+.expertise-area .expertise-content h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2849B9;
+    font-weight: 700;
+    text-align: center;
+}
+
+.expertise-area .expertise-content .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.expertise-area .expertise-content .row .card {
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.expertise-area .expertise-content .row .card .content {
+    background-color: #A2D8F2;
+    padding: 35px;
+    text-align: center;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.expertise-area .expertise-content .row .card .content h2 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.expertise-area .expertise-content .row .card .content p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/*================================== Sucessfull Stories Styling ================================*/
+.success-stories-area {
+    background-color: #5982D0;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    z-index: 1;
+}
+
+.success-stories-area .success-stories-part {
+    width: 52%;
+}
+
+.success-stories-area .stories-content {
+    display: grid;
+    place-items: center;
+    padding: 4rem 0;
+}
+
+.success-stories-area .stories-content h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.success-stories-area .stories-content p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.success-stories-area .shape-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.success-stories-area img {
+    width: 100%;
+    height: 24rem;
+}
+
+/*================================== Contact Us Part ================================*/
+.contact-area {
+    background-color: #A2D8F2;
+    padding: 4rem;
+}
+
+.contact-area .contact-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-area .contact-content h1 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-area .contact-content p {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-area .contact-content button {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background: #3457BF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*================================== Footer Part ================================*/
+.footer-area {
+    padding: 1rem 0;
+}
+
+.footer-area p {
+    text-align: center;
+}
+
+/*================================== Responsive Part ================================*/
+@media (max-width: 1200px) {
+    .header {
+        padding: 2rem 5%;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .logo {
+        font-size: 2.5rem;
+      }
+    .header #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: fixed;
+        top: 0;
+        right: -105%;
+        width: 100%;
+        background: #fff;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        z-index: 1200;
+    }
+
+    .header .navbar #close-navbar {
+        display: block;
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .about-area .about-content p {
+        letter-spacing: 0px;
+      }
+      .expertise-area .expertise-content .row .card .content h2 {
+        font-size: 2rem;
+      }
+      .expertise-area .expertise-content .row .card .content {
+        padding: 15px;
+      }
+}
+
+/* Extra small device */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header .logo {
+        font-size: 2.5rem;
+    }
+    .header .navbar a {
+        font-size: 2rem;
+      }
+    .heading {
+        font-size: 3rem;
+    }
+    .banner-area {
+        padding: 2rem;
+      }
+      .banner-area .banner-content .top-image img {
+        width: 70%;
+        height: 10%;
+      }
+      .banner-area .banner-content .bannter-text img {
+        max-width: 60%;
+      }
+      .about-area .about-content p {
+        
+        letter-spacing: 0px;
+      }
+      .expertise-area .expertise-content .row {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .expertise-area .expertise-content .row .card .content {
+        padding: 6px;
+      }
+    .about .content .about-title {
+        font-size: 4rem;
+    }
+}
